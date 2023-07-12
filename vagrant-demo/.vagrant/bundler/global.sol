@@ -1,1 +1,1 @@
-{"dependencies":[["vagrant-vmware-desktop",["= 3.0.3"]],["rake",[">= 0"]],["virtualbox_WSL2",["= 0.1.3"]]],"checksum":"ed848b48c90e076d5596431251d219eb95410cf794bde4f01a7319711bff2ff7","vagrant_version":"2.3.7"}
+{"dependencies":[["vagrant-vmware-desktop",["= 3.0.3"]]],"checksum":"6d0f57e29ad013edec44894b33eac6cc8734320d26d620f5829f2fdcff0e4090","vagrant_version":"2.3.7"}
