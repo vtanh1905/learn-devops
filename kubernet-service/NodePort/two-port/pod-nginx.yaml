@@ -2,10 +2,9 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: pod-nginx
+  labels:
+    app: simple
 spec:
-  nodeSelector:
-    petName: Kem
   containers:
     - name: nginx
       image: nginx
-  
