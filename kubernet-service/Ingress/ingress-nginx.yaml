@@ -11,5 +11,7 @@ spec:
           - path: /
             pathType: Prefix
             backend:
-              serviceName: service-web
-              servicePort: 30007
+              service:
+                name: service-web
+                port:
+                  number: 30007
