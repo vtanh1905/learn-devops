@@ -9,6 +9,7 @@ spec:
       http:
         paths:
           - path: /
+            pathType: Prefix
             backend:
               serviceName: service-web
-              servicePort: 80
+              servicePort: 30007
