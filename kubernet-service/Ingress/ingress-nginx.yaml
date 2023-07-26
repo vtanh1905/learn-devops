@@ -2,17 +2,13 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-nginx
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  namespace: ingress-controller
 spec:
   rules:
     - host: vtanh1905.com
       http:
         paths:
           - path: /
-            pathType: Prefix
             backend:
-              service:
-                name: service-web
-                port:
-                  number: 30007
+              serviceName: service-web
+              servicePort: 80
