@@ -1,0 +1,6 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-20.04"
+  config.vm.hostname = "node-worker-1"
+  config.vm.network :private_network, ip: "10.0.0.11"
+  config.vm.provision "shell", path: "install.sh"
+end
